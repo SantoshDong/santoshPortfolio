@@ -1,0 +1,138 @@
+$primary-color: #0b0c10;
+$secondary-color: #1f2833;
+$third-color: #c5c6c7;
+$fourth-color: #66fcf1;
+$fifth-color: #45a295;
+
+$show-home-image: true;
+$home-image: url(../images/homeImg.jpg);
+$background-opacity: 0.9;
+
+@mixin mainbackground{
+
+}
+
+@mixin easein-out {
+    transition: all 0.5s ease-in-out;
+}
+
+.sl-go-up{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    color: #45a295;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    @include easein-out;
+    &:hover{
+        color:$third-color;
+    }
+}
+
+.__san_profile_wrap {
+    display: flex;
+    background-color:$primary-color;
+    
+    .__san_profile_ls {
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .__san_profile_rs {
+        width: 60%;
+        margin-left: auto;
+        div {
+            height: 80vh;
+            // background-color: $secondary-color;
+        }
+    }
+}
+
+.sticky_sic {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+#sl-skills{
+    background-color:$secondary-color;
+    .sl-skills-heading{
+        display:flex;
+        width:100%;
+        span{
+            font-size:3rem;
+            font-weight:700;
+            margin:0 auto;
+        }
+    }
+    .sl-skills-list{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        padding:5rem;
+        .sl-skills-count{
+            background-color:$fourth-color;
+            color:$primary-color;
+            min-width:250px;
+            margin-bottom:1rem;
+            padding:1em 0em;
+        }
+    }
+
+}
+
+#sl-contact-from{
+    .sl-contact-heading{
+        display:flex;
+        width:100%;
+        span{
+            font-size:3rem;
+            font-weight:700;
+            margin:0 auto;
+        }
+    }
+    .sl-form-wrap{
+        width:80%;
+        margin:0 auto;
+        form{
+            background-color:$third-color;
+            border-radius:2rem;
+            .form-list-wrap{
+                padding:1rem;
+                input,textarea{
+                    display: block;
+                    width: 100%;
+                    padding: .375rem .75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    color: #495057;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    border-radius: .25rem;
+                    margin-top:1rem;
+                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                }
+                label{
+                    color:$primary-color;
+                    font-weight:600;
+                }
+            }
+        }
+    }
+}
+
+.sl-footer{
+    background-color:$secondary-color;
+    margin-top:1rem;
+    font-size:1rem;
+    font-weight:700;
+    text-align:center;
+    padding:1rem 0rem;
+}

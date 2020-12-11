@@ -7,7 +7,7 @@
     "sass": "node-sass -w scss/ -o project/css/ --recursive"
   },
   "author": "Santosh Lama",
-  "license": "MIT",
+  "license": "IT",
   "dependencies": {
     "node-sass": "^5.0.0"
   }

@@ -1,0 +1,35 @@
+header{
+    .ham-btn{
+        height:4rem;
+        width:4rem;
+        border-radius:2rem;
+        padding:.5rem;
+        position:absolute;
+        cursor:pointer;
+        @include easein-out;
+        // display:flex;
+        // align-items:center;
+        // justify-content:center;
+                    .ham-btn-line{
+                        background-color:$third-color;
+                        width:100%;
+                        height:.4rem;
+                        margin: 0 0 .5rem 0;
+                        @include easein-out;
+                    }
+                    &.close{
+                        transform:rotate(180deg);
+                        .ham-btn-line{
+                            &:nth-child(1){
+                                transform: rotate(45deg) translate(15px, 15px);
+                            }
+                            &:nth-child(2){
+                                opacity:0;
+                            }
+                            &:nth-child(3){
+                                transform: rotate(-45deg) translate(8px, -4px);
+                            }
+                        }
+                    }
+    }
+}
