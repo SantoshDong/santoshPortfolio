@@ -5,7 +5,10 @@ $fourth-color: #66fcf1;
 $fifth-color: #45a295;
 
 $show-home-image: true;
-$home-image: url(../images/homeImg.jpg);
+$home-image: url(../images/table_bg1.jpg);
+$computer-image: url(../images/computer.png);
+$mouse-image: url(../images/mouse.png);
+$cofee-image: url(../images/cofee.png);
 $background-opacity: 0.9;
 
 @mixin mainbackground{

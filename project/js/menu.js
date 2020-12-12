@@ -50,3 +50,21 @@ function scrollFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  $(document).ready(function(){
+    $(window).scroll(function(){
+       var wScroll = $(this).scrollTop();
+       $('.sl-bg-computer').css({
+         'transform' : 'translate(0px, '+ wScroll /6 +'%)'
+       })
+       $('.sl-bg-cofee').css({
+        'transform' : 'translate(0px, -'+ wScroll /2.5 +'%)'
+      })
+      $('#sl-profile').css({
+        'transform' : 'translate(0px, -'+ wScroll /6+'%)'
+      })
+    })
+  });
