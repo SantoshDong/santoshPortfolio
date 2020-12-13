@@ -187,6 +187,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
 
+main {
+  max-width: 1400px;
+  margin: 0 auto; }
+
 h1,
 h2,
 h3 {
@@ -286,3 +290,110 @@ header {
       #sl-profile .sl-icons a:hover {
         color: #66fcf1;
         transition: all 0.5s ease-in-out; }
+
+.__san_project_wrap {
+  display: flex;
+  background-color: #0b0c10; }
+  .__san_project_wrap .__san_project_ls {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .__san_project_wrap .__san_project_ls span {
+      font-size: 3rem;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .__san_project_wrap .__san_project_rs {
+    width: 60%;
+    margin-left: auto; }
+    .__san_project_wrap .__san_project_rs .__san_project {
+      padding: 1rem; }
+      .__san_project_wrap .__san_project_rs .__san_project:after {
+        content: " ";
+        height: .2em;
+        width: 100%;
+        background-color: #66fcf1;
+        display: block;
+        margin-top: 2rem; }
+      .__san_project_wrap .__san_project_rs .__san_project h2 {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center; }
+      .__san_project_wrap .__san_project_rs .__san_project .__san_project_item {
+        width: 20rem;
+        height: 15rem;
+        margin: 0 auto; }
+        .__san_project_wrap .__san_project_rs .__san_project .__san_project_item img {
+          width: 100%; }
+        .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn {
+          margin-top: 1rem;
+          text-align: center; }
+          .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn .button {
+            color: #c5c6c7;
+            background-color: #1f2833;
+            border-color: #6c757d;
+            padding: .5rem;
+            border-radius: .8rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600; }
+            .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn .button:hover {
+              color: #66fcf1; }
+
+@media (max-width: 960px) {
+  h1.sl-name, h2.sl-name, h3.sl-name {
+    font-size: 3rem;
+    color: #1f2833; }
+  #sl-background .sl-bg-computer {
+    width: 400px; }
+  #sl-background .sl-bg-cofee {
+    right: 10%; } }
+
+@media (max-width: 768px) {
+  #sl-background .sl-bg-computer {
+    left: 0;
+    top: 50%;
+    margin-top: -150px;
+    width: 290px;
+    height: 190px; }
+  #sl-profile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px; }
+  h1.sl-name, h2.sl-name, h3.sl-name {
+    font-size: 3rem;
+    color: #1f2833; } }
+
+@media (max-width: 576px) {
+  #sl-background .sl-bg-computer {
+    display: none; }
+  .__san_project_wrap .__san_project_rs {
+    width: 100%;
+    margin-left: 0px; }
+  .__san_project_wrap .__san_project_ls {
+    display: none; }
+  #sl-profile {
+    left: 0; }
+  h1.sl-name, h2.sl-name, h3.sl-name {
+    font-size: 4rem;
+    color: #1f2833; }
+  .__san_project_wrap .__san_project_rs .__san_project .__san_project_item {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto; }
+  #sl-skills .sl-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem; }
+  #sl-skills .sl-skills-heading span {
+    font-size: 2rem; }
+  #sl-contact-form .sl-contact-heading span {
+    font-size: 2rem; }
+  #sl-background .sl-bg-cofee {
+    right: 10%;
+    top: 540px;
+    width: 276px;
+    height: 212px; } }

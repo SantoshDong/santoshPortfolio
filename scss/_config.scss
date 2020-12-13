@@ -11,6 +11,10 @@ $mouse-image: url(../images/mouse.png);
 $cofee-image: url(../images/cofee.png);
 $background-opacity: 0.9;
 
+$layout-breakpoint-large: 960px;
+$layout-breakpoint-medium: 768px;
+$layout-breakpoint-small: 576px;
+
 @mixin mainbackground{
 
 }
@@ -215,3 +219,5 @@ $background-opacity: 0.9;
     text-align:center;
     padding:1rem 0rem;
 }
+
+
