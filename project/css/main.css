@@ -12,20 +12,55 @@
   .sl-go-up:hover {
     color: #c5c6c7; }
 
-.__san_profile_wrap {
+.__san_project_wrap {
   display: flex;
   background-color: #0b0c10; }
-  .__san_profile_wrap .__san_profile_ls {
+  .__san_project_wrap .__san_project_ls {
     width: 40%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .__san_profile_wrap .__san_profile_rs {
+    .__san_project_wrap .__san_project_ls span {
+      font-size: 3rem;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .__san_project_wrap .__san_project_rs {
     width: 60%;
     margin-left: auto; }
-    .__san_profile_wrap .__san_profile_rs div {
-      height: 80vh; }
+    .__san_project_wrap .__san_project_rs .__san_project {
+      padding: 1rem; }
+      .__san_project_wrap .__san_project_rs .__san_project:after {
+        content: " ";
+        height: .2em;
+        width: 100%;
+        background-color: #66fcf1;
+        display: block;
+        margin-top: 2rem; }
+      .__san_project_wrap .__san_project_rs .__san_project h2 {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center; }
+      .__san_project_wrap .__san_project_rs .__san_project .__san_project_item {
+        width: 20rem;
+        height: 15rem;
+        margin: 0 auto; }
+        .__san_project_wrap .__san_project_rs .__san_project .__san_project_item img {
+          width: 100%; }
+        .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn {
+          margin-top: 1rem;
+          text-align: center; }
+          .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn .button {
+            color: #c5c6c7;
+            background-color: #1f2833;
+            border-color: #6c757d;
+            padding: .5rem;
+            border-radius: .8rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600; }
+            .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn .button:hover {
+              color: #66fcf1; }
 
 .sticky_sic {
   position: -webkit-sticky;
@@ -52,25 +87,31 @@
       color: #0b0c10;
       min-width: 250px;
       margin-bottom: 1rem;
-      padding: 1em 0em; }
+      padding: .5rem .3rem;
+      display: flex; }
+      #sl-skills .sl-skills-list .sl-skills-count span:nth-child(1) {
+        flex: 1; }
+      #sl-skills .sl-skills-list .sl-skills-count span:nth-child(2) {
+        flex: 2;
+        align-self: center; }
 
-#sl-contact-from .sl-contact-heading {
+#sl-contact-form .sl-contact-heading {
   display: flex;
   width: 100%; }
-  #sl-contact-from .sl-contact-heading span {
+  #sl-contact-form .sl-contact-heading span {
     font-size: 3rem;
     font-weight: 700;
     margin: 0 auto; }
 
-#sl-contact-from .sl-form-wrap {
+#sl-contact-form .sl-form-wrap {
   width: 80%;
   margin: 0 auto; }
-  #sl-contact-from .sl-form-wrap form {
+  #sl-contact-form .sl-form-wrap form {
     background-color: #c5c6c7;
     border-radius: 2rem; }
-    #sl-contact-from .sl-form-wrap form .form-list-wrap {
+    #sl-contact-form .sl-form-wrap form .form-list-wrap {
       padding: 1rem; }
-      #sl-contact-from .sl-form-wrap form .form-list-wrap input, #sl-contact-from .sl-form-wrap form .form-list-wrap textarea {
+      #sl-contact-form .sl-form-wrap form .form-list-wrap input, #sl-contact-form .sl-form-wrap form .form-list-wrap textarea {
         display: block;
         width: 100%;
         padding: .375rem .75rem;
@@ -83,9 +124,24 @@
         border-radius: .25rem;
         margin-top: 1rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
-      #sl-contact-from .sl-form-wrap form .form-list-wrap label {
+      #sl-contact-form .sl-form-wrap form .form-list-wrap label {
         color: #0b0c10;
-        font-weight: 600; }
+        font-weight: 600;
+        text-transform: uppercase; }
+    #sl-contact-form .sl-form-wrap form .form-list-button {
+      text-align: center;
+      padding-bottom: 2rem; }
+      #sl-contact-form .sl-form-wrap form .form-list-button button {
+        font-size: 100;
+        border: none;
+        background-color: #0b0c10;
+        padding: .5rem 2rem;
+        color: #c5c6c7;
+        cursor: pointer;
+        border-radius: 2rem; }
+        #sl-contact-form .sl-form-wrap form .form-list-button button:hover {
+          background-color: #1f2833;
+          color: #45a295; }
 
 .sl-footer {
   background-color: #1f2833;
@@ -182,7 +238,7 @@ header {
       display: block;
       transition: all 0.5s ease-in-out; }
     header nav.hide {
-      display: none;
+      transform: translate(-100%, 0px);
       transition: all 0.5s ease-in-out; }
 
 #sl-background {

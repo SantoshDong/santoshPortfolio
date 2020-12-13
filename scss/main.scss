@@ -74,7 +74,7 @@ header{
             @include easein-out;
         }
         &.hide{
-            display:none;
+            transform: translate(-100%,0px);
             @include easein-out;
         }
     }

@@ -26,7 +26,7 @@ window.onscroll = function() {
 
 function myFunction() {
     // alert("hero");
-    var item1 = document.querySelector(".__san_profile_ls");
+    var item1 = document.querySelector(".__san_project_ls");
     
     // console.log(profile2.offsetTop);
     if (window.pageYOffset  >= 750) {
@@ -46,11 +46,6 @@ function scrollFunction() {
     }
   }
 
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
@@ -61,10 +56,43 @@ function scrollFunction() {
          'transform' : 'translate(0px, '+ wScroll /6 +'%)'
        })
        $('.sl-bg-cofee').css({
-        'transform' : 'translate(0px, -'+ wScroll /2.5 +'%)'
+        'transform' : 'translate(0px, -'+ wScroll /2.8 +'%)'
       })
       $('#sl-profile').css({
         'transform' : 'translate(0px, -'+ wScroll /6+'%)'
       })
     })
+  });
+
+
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $(".sl-nav-item a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+
+    $("#sl-go-up").on('click',function(){
+      $("html, body").animate({ 
+        scrollTop: 0 
+    }, "slow");
+    return false;
+    });
   });
