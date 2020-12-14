@@ -2,11 +2,8 @@
   "name": "santoshportfolio",
   "version": "1.0.0",
   "description": "This is my Personal Porfolio website",
-  "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o project/css/ --recursive",
-    "start": "node index.php",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Santosh Lama",
   "license": "IT",
