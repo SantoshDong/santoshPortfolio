@@ -1,1 +1,1 @@
-var PORT = process.env.PORT;
+app.listen(process.env.PORT || 5500);

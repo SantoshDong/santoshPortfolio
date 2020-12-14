@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "This is my Personal Porfolio website",
   "scripts": {
-    "sass": "node-sass -w scss/ -o project/css/ --recursive"
-
+    "sass": "node-sass -w scss/ -o project/css/ --recursive",
+    "start": "node src/index.js",
+    "build": "webpack"
   },
   "author": "Santosh Lama",
   "license": "IT",
