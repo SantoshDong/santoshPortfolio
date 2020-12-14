@@ -1,1 +1,1 @@
-web: node project/index.js
+web: ./project/index.php
