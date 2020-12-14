@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is my Personal Porfolio website",
   "main": "index.js",
+  "web": "node index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o project/css/ --recursive"
   },
