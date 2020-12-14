@@ -5,8 +5,7 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o project/css/ --recursive",
     "start": "node index.js",
-    "heroku-prebuild": "npm install --dev",
-    "build": "webpack"
+    "heroku-prebuild": "npm install --dev"
   },
   "author": "Santosh Lama",
   "license": "IT",
