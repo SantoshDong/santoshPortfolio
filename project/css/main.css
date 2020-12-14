@@ -199,7 +199,7 @@ h3 {
   h1.sl-name,
   h2.sl-name,
   h3.sl-name {
-    font-size: 5rem;
+    font-size: 6.5rem;
     color: #1f2833; }
 
 .sl-work {
@@ -259,24 +259,24 @@ header {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -150px;
-    width: 500px;
-    height: 300px; }
+    margin-top: -205px;
+    width: 600px;
+    height: 400px; }
   #sl-background .sl-bg-cofee {
     background: url(../images/cofee.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     right: 25%;
-    top: 520px;
-    width: 276px;
-    height: 212px; }
+    top: 655px;
+    width: 400px;
+    height: 300px; }
 
 #sl-profile {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -175px; }
+  margin-top: -240px; }
   #sl-profile h3 {
     color: #1f2833;
     font-weight: 600; }
@@ -340,6 +340,20 @@ header {
             font-weight: 600; }
             .__san_project_wrap .__san_project_rs .__san_project .__san_project_item .__san_project_btn .button:hover {
               color: #66fcf1; }
+
+@media (max-width: 1250px) {
+  #sl-background .sl-bg-computer {
+    background: url(../images/computer.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -150px;
+    width: 500px;
+    height: 300px; }
+  #sl-background .sl-bg-cofee {
+    right: 10%; } }
 
 @media (max-width: 960px) {
   h1.sl-name, h2.sl-name, h3.sl-name {

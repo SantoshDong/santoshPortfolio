@@ -26,7 +26,7 @@ h3{
     font-weight:400;
 
     &.sl-name{
-        font-size:5rem;
+        font-size:6.5rem;
         color:$secondary-color;
     }
 }
@@ -97,9 +97,9 @@ header{
         position:absolute;
         left:0;
         top:50%;
-        margin-top:-150px;
-        width:500px;
-        height:300px;
+        margin-top:-205px;
+        width:600px;
+        height:400px;
     }
     .sl-bg-cofee{
         background:$cofee-image;
@@ -107,9 +107,9 @@ header{
         background-repeat:no-repeat;
         position:absolute;
         right:25%;
-        top: 520px;
-        width:276px;
-        height:212px;
+        top: 655px;
+        width:400px;
+        height:300px;
     }
 }
 #sl-profile{
@@ -118,7 +118,7 @@ header{
     position:absolute;
     left:50%;
     top:50%;  
-    margin-top: -175px;
+    margin-top: -240px;
     h3{
         color:$secondary-color;
         font-weight:600;
@@ -221,6 +221,29 @@ header{
     }
 }
 
+@media (max-width: $layout-breakpoint-xlarge){
+    #sl-background{
+        .sl-bg-computer{
+            background:$computer-image;
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            position:absolute;
+            left:0;
+            top:50%;
+            margin-top:-150px;
+            width:500px;
+            height:300px;
+        }
+        .sl-bg-cofee{
+            right:10%;
+        }
+    }
+    // #sl-background {
+    //     .sl-bg-cofee {
+    //     top:600px;
+    //     }
+    // }
+}
 //media quearies for the large devides{
 @media (max-width: $layout-breakpoint-large){
     h1.sl-name, h2.sl-name, h3.sl-name {
