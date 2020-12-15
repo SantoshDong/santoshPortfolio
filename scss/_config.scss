@@ -164,52 +164,105 @@ $layout-breakpoint-xxlarge:1400px;
             margin:0 auto;
         }
     }
-    .sl-form-wrap{
-        width:80%;
-        margin:0 auto;
-        form{
-            background-color:$third-color;
-            border-radius:2rem;
-            .form-list-wrap{
-                padding:1rem;
-                input,textarea{
-                    display: block;
-                    width: 100%;
-                    padding: .375rem .75rem;
-                    font-size: 1rem;
-                    line-height: 1.5;
-                    color: #495057;
-                    background-color: #fff;
-                    background-clip: padding-box;
-                    border: 1px solid #ced4da;
-                    border-radius: .25rem;
-                    margin-top:1rem;
-                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-                }
-                label{
-                    color:$primary-color;
-                    font-weight:600;
-                    text-transform:uppercase;
-                }
-            }
-            .form-list-button{
-                text-align:center;
-                padding-bottom:2rem;
-                button{
-                    font-size:100;
-                    border:none;
-                    background-color:$primary-color;
-                    padding:.5rem 2rem;
-                    color:$third-color;
-                    cursor:pointer;
-                    border-radius:2rem;
-                    &:hover{
-                        background-color:$secondary-color;
-                        color:$fifth-color;
+    .sl-form-whole{
+        display:flex;
+        flex-direction:row;
+                .sl-form-wrap{
+                    width:60%;
+                    form{
+                        background-color:$third-color;
+                        border-radius:2rem;
+                        width:80%;
+                        margin:0 auto;
+                        .form-list-wrap{
+                            padding:1rem;
+                            input,textarea{
+                                display: block;
+                                width: 100%;
+                                padding: .375rem .75rem;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: #495057;
+                                background-color: #fff;
+                                background-clip: padding-box;
+                                border: 1px solid #ced4da;
+                                border-radius: .25rem;
+                                margin-top:1rem;
+                                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                            }
+                            label{
+                                color:$primary-color;
+                                font-weight:600;
+                                text-transform:uppercase;
+                            }
+                        }
+                        .form-list-button{
+                            text-align:center;
+                            padding-bottom:2rem;
+                            button{
+                                font-size:100;
+                                border:none;
+                                background-color:$primary-color;
+                                padding:.5rem 2rem;
+                                color:$third-color;
+                                cursor:pointer;
+                                border-radius:2rem;
+                                &:hover{
+                                    background-color:$secondary-color;
+                                    color:$fifth-color;
+                                }
+                            }
+                        }
                     }
                 }
-            }
-        }
+                .sl-connect{
+                    width:40%;
+                    .sl-connect-heading{
+                        span{
+                            font-size:2rem;
+                            font-weight:600;
+                            margin-bottom:1rem;
+                            &:after{
+                                content:"";
+                                height:.5rem;
+                                display:block;
+                                background:$fourth-color;
+                            }
+                        }
+                    }
+                    .sl-connect-items{
+                        margin-top:1rem;
+                        ul{
+                            font-size:2rem;
+                            li{
+                                list-style-type:none;
+                                i{
+                                    margin-right:.5rem;
+                                }
+                                a:hover{
+                                    span{
+                                        color:$fourth-color;
+                                    }
+                                }
+                            }
+                            li:nth-child(1){
+                                a{
+                                        i{
+                                        color:#D95145;
+                                        }
+                                    
+                                }
+                            }
+                            li:nth-child(2){
+                                a{
+                                    i{
+                                        color:#902BC8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
     }
 }
 

@@ -103,45 +103,74 @@
     font-weight: 700;
     margin: 0 auto; }
 
-#sl-contact-form .sl-form-wrap {
-  width: 80%;
-  margin: 0 auto; }
-  #sl-contact-form .sl-form-wrap form {
-    background-color: #c5c6c7;
-    border-radius: 2rem; }
-    #sl-contact-form .sl-form-wrap form .form-list-wrap {
-      padding: 1rem; }
-      #sl-contact-form .sl-form-wrap form .form-list-wrap input, #sl-contact-form .sl-form-wrap form .form-list-wrap textarea {
+#sl-contact-form .sl-form-whole {
+  display: flex;
+  flex-direction: row; }
+  #sl-contact-form .sl-form-whole .sl-form-wrap {
+    width: 60%; }
+    #sl-contact-form .sl-form-whole .sl-form-wrap form {
+      background-color: #c5c6c7;
+      border-radius: 2rem;
+      width: 80%;
+      margin: 0 auto; }
+      #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-wrap {
+        padding: 1rem; }
+        #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-wrap input, #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-wrap textarea {
+          display: block;
+          width: 100%;
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: .25rem;
+          margin-top: 1rem;
+          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+        #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-wrap label {
+          color: #0b0c10;
+          font-weight: 600;
+          text-transform: uppercase; }
+      #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-button {
+        text-align: center;
+        padding-bottom: 2rem; }
+        #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-button button {
+          font-size: 100;
+          border: none;
+          background-color: #0b0c10;
+          padding: .5rem 2rem;
+          color: #c5c6c7;
+          cursor: pointer;
+          border-radius: 2rem; }
+          #sl-contact-form .sl-form-whole .sl-form-wrap form .form-list-button button:hover {
+            background-color: #1f2833;
+            color: #45a295; }
+  #sl-contact-form .sl-form-whole .sl-connect {
+    width: 40%; }
+    #sl-contact-form .sl-form-whole .sl-connect .sl-connect-heading span {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem; }
+      #sl-contact-form .sl-form-whole .sl-connect .sl-connect-heading span:after {
+        content: "";
+        height: .5rem;
         display: block;
-        width: 100%;
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #495057;
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 1px solid #ced4da;
-        border-radius: .25rem;
-        margin-top: 1rem;
-        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
-      #sl-contact-form .sl-form-wrap form .form-list-wrap label {
-        color: #0b0c10;
-        font-weight: 600;
-        text-transform: uppercase; }
-    #sl-contact-form .sl-form-wrap form .form-list-button {
-      text-align: center;
-      padding-bottom: 2rem; }
-      #sl-contact-form .sl-form-wrap form .form-list-button button {
-        font-size: 100;
-        border: none;
-        background-color: #0b0c10;
-        padding: .5rem 2rem;
-        color: #c5c6c7;
-        cursor: pointer;
-        border-radius: 2rem; }
-        #sl-contact-form .sl-form-wrap form .form-list-button button:hover {
-          background-color: #1f2833;
-          color: #45a295; }
+        background: #66fcf1; }
+    #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items {
+      margin-top: 1rem; }
+      #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul {
+        font-size: 2rem; }
+        #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul li {
+          list-style-type: none; }
+          #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul li i {
+            margin-right: .5rem; }
+          #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul li a:hover span {
+            color: #66fcf1; }
+        #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul li:nth-child(1) a i {
+          color: #D95145; }
+        #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul li:nth-child(2) a i {
+          color: #902BC8; }
 
 .sl-footer {
   background-color: #1f2833;
@@ -219,7 +248,7 @@ header {
   header nav {
     min-height: 4rem;
     width: auto;
-    background-color: #0b0c10;
+    background-color: rgba(11, 12, 16, 0.6);
     transition: all 0.5s ease-in-out;
     border-radius: 2rem; }
     header nav ul {
@@ -378,7 +407,15 @@ header {
     margin-top: -200px; }
   h1.sl-name, h2.sl-name, h3.sl-name {
     font-size: 3rem;
-    color: #1f2833; } }
+    color: #1f2833; }
+  #sl-contact-form .sl-form-whole {
+    display: flex;
+    flex-direction: column; }
+    #sl-contact-form .sl-form-whole .sl-form-wrap {
+      width: 100%; }
+    #sl-contact-form .sl-form-whole .sl-connect {
+      width: 100%;
+      padding: 10%; } }
 
 @media (max-width: 576px) {
   #sl-background .sl-bg-computer {
@@ -404,8 +441,10 @@ header {
     padding: 1rem; }
   #sl-skills .sl-skills-heading span {
     font-size: 2rem; }
-  #sl-contact-form .sl-contact-heading span {
-    font-size: 2rem; }
+  #sl-contact-form .sl-contact-heading {
+    margin-bottom: 1rem; }
+    #sl-contact-form .sl-contact-heading span {
+      font-size: 2rem; }
   #sl-background .sl-bg-cofee {
     right: 10%;
     top: 540px;

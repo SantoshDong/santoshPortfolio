@@ -49,7 +49,7 @@ header{
     nav{
         min-height:4rem;
         width:auto;
-        background-color:$primary-color;
+        background-color:rgba(11, 12, 16, .6);
         @include easein-out;
         border-radius:2rem;
         ul{
@@ -283,6 +283,19 @@ header{
         font-size: 3rem;
         color: #1f2833;
     } 
+    #sl-contact-form{
+                .sl-form-whole{
+                    display:flex;
+                    flex-direction:column;
+                    .sl-form-wrap{
+                    width:100%;    
+                    }
+                    .sl-connect{
+                        width:100%;
+                        padding:10%
+                    }
+                }
+            }
 }
 // media quearies for 576px devices
 @media (max-width: $layout-breakpoint-small) {
@@ -337,6 +350,7 @@ header{
         } 
         #sl-contact-form{
             .sl-contact-heading{
+                margin-bottom:1rem;
                 span {
                     font-size: 2rem; 
                 }
