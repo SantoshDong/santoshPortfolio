@@ -150,21 +150,21 @@
             </div>
            <div class="sl-form-whole">
                 <div class="sl-form-wrap">
-                    <form name="contact">
+                    <form method="POST" onsubmit="validate()" action="https://formspree.io/santoshvhajuu@gmail.com">
                         <div class="form-list-wrap">
                             <label for="sl-name">Enter Name</label>
-                            <input type="text" id="sl-name" placeholder="Your Name"/>
+                            <input type="text" name="name" id="sl-name" placeholder="Your Name" required/>
                         </div>
                         <div class="form-list-wrap">
                             <label for="sl-email">Enter Email</label>
-                            <input type="text" id="sl-email" placeholder="Your Name"/>
+                            <input type="text" name="email" id="sl-email" placeholder="Your Name" required/>
                         </div>
                         <div class="form-list-wrap">
                             <label for="sl-form-message">Message</label>
-                            <textarea id="sl-form-message" name="w3review" rows="4" cols="50"></textarea>
+                            <textarea id="sl-form-message" name="message" name="w3review" rows="4" cols="50" required></textarea>
                         </div>
                         <div class="form-list-button">
-                            <button type="submit">Submit</button>
+                            <button type="submit" value="SEND">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -178,7 +178,7 @@
                                 <a href=""><span><i class="far fa-envelope fa-fw"></i>suntoshvhajuu@gmail.com</span></a>
                             </li>
                             <li>
-                                <a href=""><span><i class="fab fa-instagram fa-fw"></i>Instagram</span></a>
+                                <a href="https://www.instagram.com/santoshvhajuu2018/"><span><i class="fab fa-instagram fa-fw"></i>Instagram</span></a>
                             </li>
                         </ul>
                     </div>
