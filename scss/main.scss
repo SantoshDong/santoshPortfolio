@@ -299,6 +299,9 @@ header{
 }
 // media quearies for 576px devices
 @media (max-width: $layout-breakpoint-small) {
+    #sl-contact-form .sl-form-whole .sl-connect .sl-connect-items ul {
+        font-size: 1rem;
+    }
     #sl-background {
                 .sl-bg-computer {
                display:none;
