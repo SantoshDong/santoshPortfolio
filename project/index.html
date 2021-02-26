@@ -170,18 +170,18 @@
                     <form name="contact"  action="https://formspree.io/f/xrgorqrr" method="POST">
                         <div class="form-list-wrap">
                             <label for="sl-name">Enter Name</label>
-                            <input type="text" id="sl-name" placeholder="Your Name"/>
+                            <input type="text" id="sl-name" placeholder="Your Name" pattern="[A-Za-z]+$" required/>
                         </div>
                         <div class="form-list-wrap">
                             <label for="sl-email">Enter Email</label>
-                            <input type="text" id="sl-email" placeholder="Your Name"/>
+                            <input type="email" id="sl-email" placeholder="Your Name" required/>
                         </div>
                         <div class="form-list-wrap">
                             <label for="sl-form-message">Message</label>
-                            <textarea id="sl-form-message" name="w3review" rows="4" cols="50"></textarea>
+                            <textarea id="sl-form-message" name="w3review" rows="4" cols="50" required></textarea>
                         </div>
                         <div class="form-list-button">
-                            <button type="submit">Submit</button>
+                            <button type="submit" id="submit_info">submit</button>
                         </div>
                     </form>
                 </div>
@@ -211,5 +211,6 @@
    </main>
    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
    <script src="js/menu.js"></script>
+   <script src="js/validation.js"></script>
 </body>
 </html>
